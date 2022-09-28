@@ -16,6 +16,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="container">
       <div class="options">
@@ -29,15 +30,6 @@
         <button id="underline" class="option-button format">
           <i class="fa-solid fa-underline"></i>
         </button>
-        <!-- <button id="strikethrough" class="option-button format">
-          <i class="fa-solid fa-strikethrough"></i>
-        </button>
-        <button id="superscript" class="option-button script">
-          <i class="fa-solid fa-superscript"></i>
-        </button>
-        <button id="subscript" class="option-button script">
-          <i class="fa-solid fa-subscript"></i>
-        </button> -->
 
         <!-- List -->
         <button id="insertOrderedList" class="option-button">
@@ -45,23 +37,7 @@
         </button>
         <button id="insertUnorderedList" class="option-button">
           <i class="fa-solid fa-list"></i>
-        </button>
-
-        <!-- Undo/Redo -->
-        <!-- <button id="undo" class="option-button">
-          <i class="fa-solid fa-rotate-left"></i>
-        </button>
-        <button id="redo" class="option-button">
-          <i class="fa-solid fa-rotate-right"></i>
-        </button> -->
-
-        <!-- Link -->
-        <!-- <button id="createLink" class="adv-option-button">
-          <i class="fa fa-link"></i>
-        </button>
-        <button id="unlink" class="option-button">
-          <i class="fa fa-unlink"></i>
-        </button> -->
+</button>
 
         <!-- Alignment -->
         <button id="justifyLeft" class="option-button align">
@@ -107,8 +83,12 @@
           <label for="backColor">Highlight Color</label>
         </div>
       </div>
-      <div id="text-input" contenteditable="true"></div>
-    </div>
+      <form action="test.php" method="post">
+        <div id="input-text" contenteditable="true"></div>
+        <textarea name="hidden-text" id="hidden-text" cols="30" rows="10" hidden></textarea>
+        <!-- <button id="submit">Submit</button> -->
+        <input id="submit" type="submit" value="Submit">
+      </form>
     <!--Script-->
     <script src="script.js"></script>
   </body>
