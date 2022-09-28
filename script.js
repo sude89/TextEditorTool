@@ -8,6 +8,7 @@ let alignButtons = document.querySelectorAll(".align");
 let spacingButtons = document.querySelectorAll(".spacing");
 let formatButtons = document.querySelectorAll(".format");
 // let scriptButtons = document.querySelectorAll(".script");
+let submitButton = document.getElementById("")
 
 //List of fontlist
 let fontList = [
@@ -115,3 +116,14 @@ const highlighterRemover = (className) => {
 };
 
 window.onload = initializer();
+
+let submit = document.getElementById('submit');
+let input_text = document.getElementById('input-text');
+let hidden_text = document.getElementById('hidden-text');
+
+submit.addEventListener('click', (e) => {
+  console.log("hi");
+  hidden_text.value = input_text.innerHTML;
+  console.log(hidden_text.value);
+  // e.preventDefault();
+})
