@@ -21,6 +21,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* Remove input hightlight in Chrome */
+#text-input:focus {
+  outline: none;
+}
 body {
   background-color: var(--grey-dark);
 }

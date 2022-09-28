@@ -107,8 +107,12 @@
           <label for="backColor">Highlight Color</label>
         </div>
       </div>
-      <div id="text-input" contenteditable="true"></div>
-    </div>
+      <form action="" method="post">
+        <div id="text-input" contenteditable="true"></div>
+        <input type="submit" value="Submit">
+      </div>
+
+      </form>
     <!--Script-->
     <script src="script.js"></script>
   </body>
