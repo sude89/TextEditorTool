@@ -1,2 +1,2 @@
 <?php
-echo $_POST['hidden-text'];
+echo htmlspecialchars($_POST['hidden-text']);

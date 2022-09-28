@@ -122,7 +122,7 @@ let input_text = document.getElementById('input-text');
 let hidden_text = document.getElementById('hidden-text');
 
 submit.addEventListener('click', (e) => {
-  console.log("hi");
+  // console.log("hi");
   hidden_text.value = input_text.innerHTML;
   console.log(hidden_text.value);
   // e.preventDefault();

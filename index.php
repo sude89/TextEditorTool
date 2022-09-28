@@ -83,9 +83,9 @@
           <label for="backColor">Highlight Color</label>
         </div>
       </div>
-      <form action="test.php" method="post">
+      <form action="EntryEditManager.php" method="post">
         <div id="input-text" contenteditable="true"></div>
-        <textarea name="hidden-text" id="hidden-text" cols="30" rows="10" hidden></textarea>
+        <textarea name="hidden-text" id="hidden-text" cols="100" rows="30" hidden></textarea>
         <!-- <button id="submit">Submit</button> -->
         <input id="submit" type="submit" value="Submit">
       </form>
